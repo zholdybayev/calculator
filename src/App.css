@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.calculator {
+  margin-top: 50px;
+  background-color: #202020;
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  padding: 10px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  display: flex;
+  background-color: #202020;
+  font-weight: 400;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous {
+  display: flex;
+  align-items: flex-end;
+  color: grey;
+  font-size: 28px;
+}
+
+.current {
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  font-size: 40px;
+}
+
+
+button {
+  border-radius: 100px;
+  margin: 7px;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.first-class {
+  background-color: #9e9e9e;
+  font-size: 28px;
+  font-weight: 500;
+  color: #202020;
+}
+
+.first-class:active {
+  background-color: #bababa;
+}
+
+.second-class {
+  background-color: #e09119;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.second-class:active {
+  background-color: #ffd18c;
+}
+
+.third-class {
+  background-color: #303030;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.third-class:active {
+  background-color: #616161;
+}
